@@ -31,7 +31,6 @@ struct CoreBeliefsList: View {
             }
             .padding()
         }
-        .navigationTitle("Core Beliefs")
     }
 }
 
