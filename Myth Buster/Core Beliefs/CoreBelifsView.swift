@@ -29,7 +29,7 @@ struct CoreBeliefView: View {
             }
         }
         .padding()
-        .frame(maxWidth: .infinity, alignment: .leading) // Align content to leading edge
+        .frame(maxWidth: .infinity, alignment: .leading) 
         .background(Color.gray.opacity(0.1).cornerRadius(10.0))
         .onTapGesture {
             withAnimation {
@@ -39,10 +39,4 @@ struct CoreBeliefView: View {
     }
 }
 
-#Preview {
-    CoreBeliefView(belief: CoreBelief(
-        title: "Belief in God (Allah)",
-        shortDescription: "Belief in the one and only God, Allah.",
-        detailedDescription: "In Islam, the belief in God is the cornerstone of faith. This entails believing in one God, Allah, who is unique, without partners or equals. He is the Creator and Sustainer of the universe, all-knowing, all-powerful, and merciful..."
-    ))
-}
+

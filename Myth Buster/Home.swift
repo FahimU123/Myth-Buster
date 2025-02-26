@@ -9,8 +9,32 @@ import SwiftUI
 
 struct Home: View {
     var body: some View {
-        Text("Test")
-            .padding()
+        TabView {
+            CoreBeliefsList()
+                .tabItem {
+                    Image(systemName: "house")
+                    Text("Core Beliefs")
+                }
+            
+            Misconceptions()
+                .tabItem {
+                    Image(systemName: "info.circle")
+                    Text("Misconceptions")
+                }
+            
+            Practices()
+                .tabItem {
+                    Image(systemName: "sunrise.fill")
+                    Text("Practices")
+                    
+                }
+            
+            HistoryAndCulture()
+                .tabItem {
+                    Image(systemName: "book")
+                    Text("History & Culture")
+                }
+        }
     }
 }
 
