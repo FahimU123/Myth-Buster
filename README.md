@@ -6,7 +6,7 @@
 ### Myth/Fact Format: Presents information in a straightforward myth vs. fact format.
 ### Categorized Topics: Organizes information into relevant categories (e.g., core beliefs, practices, misconceptions).
 ### Simple Language: Uses easy-to-understand language, avoiding jargon.
-### Resource Links (Optional): Provides links to reputable sources for further reading (if implemented).
+
 
 # Intended Audience
 This app is for anyone interested in learning more about Islam, including:
