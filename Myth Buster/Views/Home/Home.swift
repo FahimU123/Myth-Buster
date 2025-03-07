@@ -16,7 +16,7 @@ struct Home: View {
                     Text("Core Beliefs")
                 }
             
-            Misconceptions()
+            MisconceptionsView()
                 .tabItem {
                     Image(systemName: "info.circle")
                     Text("Misconceptions")

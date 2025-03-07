@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		DDDC02D72D6F97B100B98A89 /* Myth Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myth Buster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDDC02D72D6F97B100B98A89 /* Myth Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Myth Buster.app"; path = "/Users/fahim/Desktop/Personal Projects/Myth Buster/build/Debug-iphoneos/Myth Buster.app"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		DDCB1DC62D7B7A2800126518 /* Styling */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Styling;
+			sourceTree = "<group>";
+		};
 		DDDC02D92D6F97B100B98A89 /* Myth Buster */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Myth Buster";
@@ -33,16 +38,8 @@
 			isa = PBXGroup;
 			children = (
 				DDDC02D92D6F97B100B98A89 /* Myth Buster */,
-				DDDC02D82D6F97B100B98A89 /* Products */,
+				DDCB1DC62D7B7A2800126518 /* Styling */,
 			);
-			sourceTree = "<group>";
-		};
-		DDDC02D82D6F97B100B98A89 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DDDC02D72D6F97B100B98A89 /* Myth Buster.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -61,6 +58,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
+				DDCB1DC62D7B7A2800126518 /* Styling */,
 				DDDC02D92D6F97B100B98A89 /* Myth Buster */,
 			);
 			name = "Myth Buster";
@@ -95,7 +93,7 @@
 			mainGroup = DDDC02CE2D6F97B100B98A89;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = DDDC02D82D6F97B100B98A89 /* Products */;
+			productRefGroup = DDDC02CE2D6F97B100B98A89;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
