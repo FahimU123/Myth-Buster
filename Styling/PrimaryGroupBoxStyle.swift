@@ -14,7 +14,7 @@ struct CardGroupBoxStyle: GroupBoxStyle {
             configuration.content
         }
         .padding()
-        .background(Color(.orange))
+        .background(Color(.green))
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 }

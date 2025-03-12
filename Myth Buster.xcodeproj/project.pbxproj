@@ -6,14 +6,89 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		DDB9CF472D89F6E3008A6870 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB9CF462D89F6E3008A6870 /* WidgetKit.framework */; };
+		DDB9CF492D89F6E3008A6870 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDB9CF482D89F6E3008A6870 /* SwiftUI.framework */; };
+		DDB9CF542D89F6E5008A6870 /* HadithWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DDB9CF442D89F6E3008A6870 /* HadithWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DDB9CF522D89F6E5008A6870 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DDDC02CF2D6F97B100B98A89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDB9CF432D89F6E3008A6870;
+			remoteInfo = HadithWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DDB9CF552D89F6E5008A6870 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DDB9CF542D89F6E5008A6870 /* HadithWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		DDDC02D72D6F97B100B98A89 /* Myth Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Myth Buster.app"; path = "/Users/fahim/Desktop/Personal Projects/Myth Buster/build/Debug-iphoneos/Myth Buster.app"; sourceTree = "<absolute>"; };
+		DDB9CE742D88A9D7008A6870 /* Myth Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myth Buster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB9CF442D89F6E3008A6870 /* HadithWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HadithWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB9CF462D89F6E3008A6870 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DDB9CF482D89F6E3008A6870 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DDB9CF582D89F6E5008A6870 /* Exceptions for "HadithWidget" folder in "HadithWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DDB9CF432D89F6E3008A6870 /* HadithWidgetExtension */;
+		};
+		DDB9CF6E2D89F746008A6870 /* Exceptions for "Model" folder in "Myth Buster" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				API/APIManager.swift,
+				API/HadithData.swift,
+			);
+			target = DDDC02D62D6F97B100B98A89 /* Myth Buster */;
+		};
+		DDB9CF792D89F7FE008A6870 /* Exceptions for "HadithWidget" folder in "Myth Buster" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				HadithWidget.swift,
+			);
+			target = DDDC02D62D6F97B100B98A89 /* Myth Buster */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DDCB1DC62D7B7A2800126518 /* Styling */ = {
+		DDB9CF4A2D89F6E3008A6870 /* HadithWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DDB9CF792D89F7FE008A6870 /* Exceptions for "HadithWidget" folder in "Myth Buster" target */,
+				DDB9CF582D89F6E5008A6870 /* Exceptions for "HadithWidget" folder in "HadithWidgetExtension" target */,
+			);
+			path = HadithWidget;
+			sourceTree = "<group>";
+		};
+		DDB9CF612D89F71B008A6870 /* Styling */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Styling;
+			sourceTree = "<group>";
+		};
+		DDB9CF672D89F72B008A6870 /* Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				DDB9CF6E2D89F746008A6870 /* Exceptions for "Model" folder in "Myth Buster" target */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DDDC02D92D6F97B100B98A89 /* Myth Buster */ = {
@@ -24,6 +99,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DDB9CF412D89F6E3008A6870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB9CF492D89F6E3008A6870 /* SwiftUI.framework in Frameworks */,
+				DDB9CF472D89F6E3008A6870 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDDC02D42D6F97B100B98A89 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,17 +118,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DDB9CF452D89F6E3008A6870 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DDB9CF462D89F6E3008A6870 /* WidgetKit.framework */,
+				DDB9CF482D89F6E3008A6870 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DDDC02CE2D6F97B100B98A89 = {
 			isa = PBXGroup;
 			children = (
 				DDDC02D92D6F97B100B98A89 /* Myth Buster */,
-				DDCB1DC62D7B7A2800126518 /* Styling */,
+				DDB9CE742D88A9D7008A6870 /* Myth Buster.app */,
+				DDB9CF672D89F72B008A6870 /* Model */,
+				DDB9CF612D89F71B008A6870 /* Styling */,
+				DDB9CF442D89F6E3008A6870 /* HadithWidgetExtension.appex */,
+				DDB9CF4A2D89F6E3008A6870 /* HadithWidget */,
+				DDB9CF452D89F6E3008A6870 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DDB9CF432D89F6E3008A6870 /* HadithWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDB9CF592D89F6E5008A6870 /* Build configuration list for PBXNativeTarget "HadithWidgetExtension" */;
+			buildPhases = (
+				DDB9CF402D89F6E3008A6870 /* Sources */,
+				DDB9CF412D89F6E3008A6870 /* Frameworks */,
+				DDB9CF422D89F6E3008A6870 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DDB9CF4A2D89F6E3008A6870 /* HadithWidget */,
+				DDB9CF672D89F72B008A6870 /* Model */,
+			);
+			name = HadithWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = HadithWidgetExtension;
+			productReference = DDB9CF442D89F6E3008A6870 /* HadithWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DDDC02D62D6F97B100B98A89 /* Myth Buster */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDDC02E52D6F97B300B98A89 /* Build configuration list for PBXNativeTarget "Myth Buster" */;
@@ -52,20 +173,22 @@
 				DDDC02D32D6F97B100B98A89 /* Sources */,
 				DDDC02D42D6F97B100B98A89 /* Frameworks */,
 				DDDC02D52D6F97B100B98A89 /* Resources */,
+				DDB9CF552D89F6E5008A6870 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DDB9CF532D89F6E5008A6870 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DDCB1DC62D7B7A2800126518 /* Styling */,
+				DDB9CF612D89F71B008A6870 /* Styling */,
 				DDDC02D92D6F97B100B98A89 /* Myth Buster */,
 			);
 			name = "Myth Buster";
 			packageProductDependencies = (
 			);
 			productName = "Myth Buster";
-			productReference = DDDC02D72D6F97B100B98A89 /* Myth Buster.app */;
+			productReference = DDB9CE742D88A9D7008A6870 /* Myth Buster.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -78,6 +201,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					DDB9CF432D89F6E3008A6870 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					DDDC02D62D6F97B100B98A89 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -98,11 +224,19 @@
 			projectRoot = "";
 			targets = (
 				DDDC02D62D6F97B100B98A89 /* Myth Buster */,
+				DDB9CF432D89F6E3008A6870 /* HadithWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DDB9CF422D89F6E3008A6870 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDDC02D52D6F97B100B98A89 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,6 +247,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DDB9CF402D89F6E3008A6870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DDDC02D32D6F97B100B98A89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -122,7 +263,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DDB9CF532D89F6E5008A6870 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DDB9CF432D89F6E3008A6870 /* HadithWidgetExtension */;
+			targetProxy = DDB9CF522D89F6E5008A6870 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DDB9CF562D89F6E5008A6870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD28Q5JP86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HadithWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HadithWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msuappleacademy.Myth-Buster.HadithWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DDB9CF572D89F6E5008A6870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SD28Q5JP86;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HadithWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HadithWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "msuappleacademy.Myth-Buster.HadithWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DDDC02E32D6F97B300B98A89 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -303,6 +506,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DDB9CF592D89F6E5008A6870 /* Build configuration list for PBXNativeTarget "HadithWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDB9CF562D89F6E5008A6870 /* Debug */,
+				DDB9CF572D89F6E5008A6870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DDDC02D22D6F97B100B98A89 /* Build configuration list for PBXProject "Myth Buster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

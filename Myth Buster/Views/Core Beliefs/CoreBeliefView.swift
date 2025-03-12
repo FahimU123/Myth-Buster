@@ -13,7 +13,7 @@ struct CoreBeliefView: View {
     
     var body: some View {
         
-            GroupBox(label: Text(belief.title)) {
+        GroupBox {
                 VStack(alignment: .leading) {
                     GroupBox {
                         Text(belief.shortDescription)

@@ -14,7 +14,7 @@ struct SecondaryGroupBoxStyle: GroupBoxStyle {
             configuration.content
         }
         .padding()
-        .background(Color(.brown))
+        .background(Color(.blue))
         .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
     }
 }
