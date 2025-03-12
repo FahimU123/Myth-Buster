@@ -8,7 +8,6 @@ import Foundation
 
 struct CoreBelief: Identifiable {
     let id = UUID()
-    let title: String
     let shortDescription: String
     let detailedDescription: String
 }
