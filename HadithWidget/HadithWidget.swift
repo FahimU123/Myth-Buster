@@ -23,30 +23,26 @@ struct Provider: TimelineProvider {
     
     func getTimeline(in context: Context, completion: @escaping (Timeline<SimpleEntry>) -> ()) {
         Task {
-            do {
-      
-                let hadith = try await APIManager.fetchRandomHadith()
-                
-                
-                let entry = SimpleEntry(date: Date(), hadith: hadith)
-                
-                
-                let nextUpdate = Calendar.current.date(byAdding: .minute, value: 15, to: Date())!
-                
-               
-                let timeline = Timeline(entries: [entry], policy: .after(nextUpdate))
-                completion(timeline)
-            } catch {
-                
-                print("Error fetching Hadith: \(error)")
-                
-                let entry = SimpleEntry(date: Date(), hadith: nil)
-                
-        
-                let retryDate = Calendar.current.date(byAdding: .minute, value: 5, to: Date())!
-                let timeline = Timeline(entries: [entry], policy: .after(retryDate))
-                completion(timeline)
+            
+            guard let hadith = try? await APIManager.fetchRandomHadith() else {
+                return
             }
+            
+            
+            let entry = SimpleEntry(date: Date(), hadith: hadith)
+            
+            
+            let nextUpdate = Calendar.current.date(
+                byAdding: DateComponents(minute: 1),
+                to: Date()
+            )!
+            
+            let timeline = Timeline(
+                entries: [entry],
+                policy: .after(nextUpdate)
+            )
+            
+            completion(timeline)
         }
     }
 }
@@ -57,26 +53,34 @@ struct SimpleEntry: TimelineEntry {
 }
 
 struct HadithWidgetEntryView: View {
+    
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Random Hadith")
-                .font(.headline)
+            
+        VStack(alignment: .leading) {
             
             if let hadith = entry.hadith {
-                Text(hadith.hadithEnglish)
-                    .font(.body)
-                    .multilineTextAlignment(.center)
-                    .padding()
+                VStack(alignment: .leading) {
+                    Text("Hadith Strength: \(hadith.status)")
+                        .font(.system(size: 8, weight: .light))
+                        .foregroundColor(.blue)
+                    
+                    Text(hadith.hadithEnglish)
+                        .font(.system(size: 8, weight: .light))
+                        .multilineTextAlignment(.leading)
+                }
+                .padding()
+                .background(RoundedRectangle(cornerRadius: 12)
+                    .fill(Color.white.opacity(0.1)))
             } else {
                 Text("No Hadith available")
                     .font(.body)
                     .multilineTextAlignment(.center)
                     .padding()
             }
+            
         }
-        .padding()
     }
 }
     

@@ -15,7 +15,7 @@ class APIManager {
     let apiKey = "$2y$10$gHmARct336dcTvNtqLkrUuQbSaiDouU9sDKBiJOlvJ1CXsfOA7z4G"
     
     static func fetchRandomHadith() async throws -> HadithData {
-        let urlString = "https://hadithapi.com/api/hadiths?apiKey=\(shared.apiKey)&paginate=1"
+        let urlString = "https://hadithapi.com/api/hadiths?apiKey=\(shared.apiKey)"
         
         guard let url = URL(string: urlString) else {
             throw URLError(.badURL)
@@ -33,5 +33,4 @@ class APIManager {
         return randomHadith
     }
 }
-
 

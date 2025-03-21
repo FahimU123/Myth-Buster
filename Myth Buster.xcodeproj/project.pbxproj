@@ -37,7 +37,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DDB9CE742D88A9D7008A6870 /* Myth Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Myth Buster.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB9CE742D88A9D7008A6870 /* Myth Buster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Myth Buster.app"; path = "/Users/fahim/Desktop/Myth-Buster/build/Debug-iphoneos/Myth Buster.app"; sourceTree = "<absolute>"; };
 		DDB9CF442D89F6E3008A6870 /* HadithWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HadithWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB9CF462D89F6E3008A6870 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		DDB9CF482D89F6E3008A6870 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -76,11 +76,6 @@
 				DDB9CF582D89F6E5008A6870 /* Exceptions for "HadithWidget" folder in "HadithWidgetExtension" target */,
 			);
 			path = HadithWidget;
-			sourceTree = "<group>";
-		};
-		DDB9CF612D89F71B008A6870 /* Styling */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Styling;
 			sourceTree = "<group>";
 		};
 		DDB9CF672D89F72B008A6870 /* Model */ = {
@@ -131,9 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				DDDC02D92D6F97B100B98A89 /* Myth Buster */,
-				DDB9CE742D88A9D7008A6870 /* Myth Buster.app */,
 				DDB9CF672D89F72B008A6870 /* Model */,
-				DDB9CF612D89F71B008A6870 /* Styling */,
 				DDB9CF442D89F6E3008A6870 /* HadithWidgetExtension.appex */,
 				DDB9CF4A2D89F6E3008A6870 /* HadithWidget */,
 				DDB9CF452D89F6E3008A6870 /* Frameworks */,
@@ -181,7 +174,6 @@
 				DDB9CF532D89F6E5008A6870 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DDB9CF612D89F71B008A6870 /* Styling */,
 				DDDC02D92D6F97B100B98A89 /* Myth Buster */,
 			);
 			name = "Myth Buster";
