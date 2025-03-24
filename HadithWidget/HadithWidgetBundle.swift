@@ -2,7 +2,7 @@
 //  HadithWidgetBundle.swift
 //  HadithWidget
 //
-//  Created by Fahim Uddin on 3/18/25.
+//  Created by Fahim Uddin on 3/24/25.
 //
 
 import WidgetKit

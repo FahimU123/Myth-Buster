@@ -12,4 +12,3 @@ struct CoreBelief: Identifiable {
     let detailedDescription: String
 }
 
-

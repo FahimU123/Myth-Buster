@@ -2,7 +2,7 @@
 //  HadithWidget.swift
 //  HadithWidget
 //
-//  Created by Fahim Uddin on 3/18/25.
+//  Created by Fahim Uddin on 3/24/25.
 //
 
 import WidgetKit
@@ -46,16 +46,13 @@ struct Provider: TimelineProvider {
         }
     }
 }
-
 struct SimpleEntry: TimelineEntry {
     var date: Date
     var hadith: HadithData?
 }
-
 struct HadithWidgetEntryView: View {
     
     var entry: Provider.Entry
-
     var body: some View {
             
         VStack(alignment: .leading) {
@@ -84,10 +81,8 @@ struct HadithWidgetEntryView: View {
     }
 }
     
-
 struct HadithWidget: Widget {
     let kind: String = "HadithWidget"
-
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
@@ -103,10 +98,9 @@ struct HadithWidget: Widget {
         .description("This is an example widget.")
     }
 }
-
 #Preview(as: .systemSmall) {
     HadithWidget()
 } timeline: {
     SimpleEntry(date: .now, hadith: nil )
-
 }
+

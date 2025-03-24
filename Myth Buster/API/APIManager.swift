@@ -2,7 +2,7 @@
 //  APIManager.swift
 //  Myth Buster
 //
-//  Created by Fahim Uddin on 3/18/25.
+//  Created by Fahim Uddin on 3/24/25.
 //
 
 import Foundation
@@ -33,4 +33,3 @@ class APIManager {
         return randomHadith
     }
 }
-
