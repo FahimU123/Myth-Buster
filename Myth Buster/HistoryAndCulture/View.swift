@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HistoryAndCulture: View {
     var body: some View {
-        Text("sS")
+        Text("In Progress...")
     }
 }
 
